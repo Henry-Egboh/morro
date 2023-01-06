@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Blinker:wght@200;300;400;600&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 100%;
+    height: 100vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #0b201e; 
+}
+/* container  */
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* grid-template-rows: repeat(4, 8rem); */
+    /* gap: 1rem; */
+}
+
+/* header section */
+.header {
+    /* background-color: #373120; */
+    grid-area: 1 / 1 / 2 / 4;
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    padding: 0.6rem 4rem;
+}
+
+/* nav bar */
+.list {
+    padding-left: 16rem;
+    position: relative;
+}
+
+.list ul {
+    list-style-type: none;
+}
+
+.list ul li {
+    display: inline-block;
+}
+
+.list ul li a {
+    text-decoration: none;
+    color: #77705c;
+    padding: 0.8rem 1.6rem;
+    display: block;
+}
+
+/* sub menu items */
+.sub_item {
+    min-width: 12rem;
+    position: absolute;
+    background: linear-gradient(to left, #fff, rgba(136, 58, 129, 0.6));
+    box-shadow: 0px 0px 12px 2px rgba(0, 0, 0, 0.2);
+    display: none;
+}
+
+.sub_item ul li {
+    display: block;
+}
+
+/* display sub menu */
+.services:hover .sub_item {
+    display: block;
+}
+
+/* active hover list item color */
+.services:hover .a_services{
+    color: #fff; 
+    background-color: #77705c;
+}
+
+/* sub sub menu item root */
+.faux {
+    position: relative;
+}
+
+.sub_sub_item {
+    min-width: 12rem;
+    position: absolute;
+    background: linear-gradient(to top right, #fff, rgba(136, 58, 129, 0.6));
+    box-shadow: 0px 0px 12px 2px rgba(0, 0, 0, 0.2);
+    left: 100%;
+    top: 0%;
+    display: none;
+}
+
+/* display sub sub menu item */
+.faux:hover .sub_sub_item {
+    display: block;
+}
+
+/* active hover color */
+.faux:hover .a_faux {
+    color: #fff; 
+    background-color: #77705c;
+}
+
+/* showcase */
+.main {
+    background-color: #f1f1f1;
+    /* background-color: #4c716d; */
+    color: #0b201e;
+    grid-row: 2 / 3;
+    grid-column: 1 / 4;
+    padding: 10rem 4rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+/* list inside show case content */
+.sec ul {
+    list-style-type: none;
+}
+
+/* style bullet points */
+/* .sec ul li::marker {
+    color: #fff;
+} */
+
+.sec ul li {
+    /* display: block; */
+    padding: 0.5rem 0rem;
+}
+
+.sec ul li a {
+    text-decoration: none;
+    /* color: rgb(217, 226, 226); */
+    color: #77705c;
+    padding: 0.5rem;
+}
+
+/* ================================================= */
+/* anchor tags */
+.sec ul li a:hover, .list ul li a:hover {
+    background-color: #77705c;
+    color: #fff;
+}
+
+/* header tags in showcase */
+.main h3 {
+    font-size: 1rem;
+    padding-bottom: 0.5rem;
+    text-transform: uppercase;
+    color: rgb(90, 76, 60);
+}
+/* p tags in showcase */
+.main p {
+    color: #0b201e;
+    line-height: 1.4rem;
+    padding-bottom: 1rem;
+}
+
+/* ========================================================================================================================
+========================================== SECTION ========================================================================= */
+/* section contents */
+.section {
+    /* background-color: #4c716d; */
+    padding: 4rem;
+}
+
+.section:nth-of-type(2) {
+    grid-area: 3 / 2 / 4 / 4;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+}
+
+/* left image */
+.img {
+    width: 100%;
+}
+
+/* 3 grid column sections */
+.section:nth-of-type(3), .section:nth-of-type(4), .section:nth-of-type(5) {
+    padding: 4rem 4rem 8rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    /* align-items: center; */
+    /* justify-content: center; */
+    text-align: center;
+    line-height: 1.6rem;
+}
+
+/* target first p in the section content */
+.section h3 + p {
+    color: #77705c;
+}
+
+/* section h3, h4 */
+.section h3, .section h4 {
+    color: rgb(90, 76, 60);
+}
+
+/* img and text section */
+
+.img_txt1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 0.8rem;
+    text-align: center;
+    padding-bottom: 2rem;
+    border-bottom: 1px inset #0b201e;
+}
+
+.img_txt1 p {
+    color: #77705c;
+}
+
+/* rounded image */
+.img_txt img {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 100%;
+    /* text-align: center; */
+}
+
+/* section list items */
+.more_list {
+    padding: 2rem 1rem;
+    margin-bottom: 2rem;
+    background-color: #f1f1f1;
+    font-size: 0.8rem;
+    line-height: 1.6rem;
+}
+
+.more_list ul {
+    list-style: none;
+}
+
+.more_list ul li {
+    padding: 0rem 0.5rem;
+    border-left: 2px solid #0b201e;
+    margin: 0.5rem 0rem;
+    /* font-size: 0.8rem; */
+}
+
+.more_list ul li a {
+    color: #77705c;
+    text-decoration: none;
+    padding: 0.5rem;
+} 
+
+.more_list ul li a:hover {
+    /* background-color: #77705c; */
+    color: #0b201e;
+}
+
+.aside {
+    grid-area: 5 / 1 / 6 / 4;
+    background-color: #f1f1f1;
+    min-height: 6rem;
+}
+
+/* ===================================================================================
+===========================================================footer =================================== */
+/* FOOTER CONTAINER*/
+.footer {
+    grid-area: 6 / 1 / 7 / 4;
+    background-color: #0b201e;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    color: rgb(217, 226, 226);
+    column-gap: 2rem;
+    padding: 10rem 4rem 0rem;
+    justify-items: center;
+}
+
+.footer p {
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    line-height: 1.5rem;
+}
+
+.footer_item h4 {
+    padding-bottom: 0.8rem;
+}
+
+/* footer lists */
+.footer_list ul {
+    list-style-type: none;
+}
+
+.footer_list ul li {
+  padding: 0.3rem 0rem;
+}
+
+.footer_list ul li a {
+    text-decoration: none;
+    color: rgb(217, 226, 226);
+    font-size: 0.8rem;
+    padding: 0.2rem 0rem;
+}
+
+.footer_list ul li a:hover {
+    border-bottom: 1px solid #77705c;
+}
+
+/* copyright section */
+.footer_base {
+    grid-area: 2 / 1 / 3 / 5;
+    padding: 4rem 0rem 4rem;
+    display: flex;
+    column-gap: 10rem;
+}
+
