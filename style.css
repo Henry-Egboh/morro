@@ -140,7 +140,7 @@ body {
 .sec ul li a {
     text-decoration: none;
     color: #77705c;
-    padding: 0.5rem;
+    padding: 0.5rem 0rem;
 }
 
 /* =====================================================================================================
@@ -311,7 +311,7 @@ body {
 }
 
 /* =====================================================================================================
-==========================================empty div ================================================ */
+==========================================SOCIAL ICONS ================================================ */
 
 .aside {
     grid-area: 5 / 1 / 6 / 4;
@@ -391,7 +391,39 @@ body {
     column-gap: 10rem;
     border-top: 1px ridge #77705c;
     width: 100%;
+}
 
+/* =======================================================================================================================
+=========================================MEDIA QUERY ==================================================================== */
+@media screen {
+    .container {
+        grid-template-columns: 1fr;
+    }
+    
+    /* header section */
+    .header {
+        flex-direction: column;
+        justify-content: center;
+        padding: 0.6rem 0.5rem;
+    }
+
+    /* reduce font-size of navbar */
+    .list ul li a {
+        padding: 0.2rem 0.5rem;
+        font-size: 0.8rem;
+    }
+
+    /* showcase */
+    .main {
+        padding: 4rem 4rem;
+        grid-template-columns: 1fr;
+        gap: 2rem 0rem;
+    }
+
+    /* button items container */
+.show:nth-of-type(2) {
+    grid-template-columns: repeat(3, 1fr);
+}
 }
 
 
