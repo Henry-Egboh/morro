@@ -434,7 +434,7 @@ body {
     .section_content {
         grid-template-columns: 1fr;
         row-gap: 2rem;
-        padding: 4rem;
+        padding: 4rem 1rem;
     }
 
     /* image, txt and list items */
@@ -446,7 +446,7 @@ body {
 
     /* 3 grid column sections */
     .threecolumns {
-        padding: 0rem 4rem 6rem;
+        padding: 0rem 2rem 6rem;
         flex-direction: column;
         row-gap: 2rem;
         text-align: center;
@@ -485,9 +485,13 @@ body {
         grid-template-columns: repeat(2, 1fr);
     }
     
+    .section_content {
+        padding: 4rem 2rem; 
+    }
+
     /* 3 grid column sections */
     .threecolumns {
-        padding: 0rem 4rem 6rem;
+        padding: 0rem 2rem 6rem;
         flex-direction: row;
         column-gap: 2rem;
         text-align: left;
